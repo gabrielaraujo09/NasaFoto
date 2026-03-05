@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD - What did space look like on your birthday?</title>
+    <!-- Beautiful fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div class="container">
+        <header>
+            <h1>Discover the Cosmos</h1>
+            <p>Enter your birthday to see the Astronomy Picture of the Day.</p>
+        </header>
+
+        <form id="birthday-form">
+            <div class="input-group">
+                <input type="date" id="birthday-input" required max="">
+                <button type="submit" id="submit-btn">Explore</button>
+            </div>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Journeying through space and time...</p>
+            </div>
+            <div id="error-message" class="error hidden"></div>
+        </form>
+
+        <main id="result-container" class="hidden">
+            <div class="glass-card">
+                <h2 id="apod-title">Title Here</h2>
+                <div class="date-badge" id="apod-date">Date Here</div>
+
+                <div class="media-container" id="media-container">
+                    <!-- Image or Video will be injected here -->
+                </div>
+
+                <div class="explanation-container">
+                    <p id="apod-explanation">Explanation here.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
